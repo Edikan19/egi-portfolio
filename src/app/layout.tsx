@@ -1,7 +1,11 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
+const siteUrl = "https://egi-portfolio-ten.vercel.app";
+
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
+
   title: {
     default: "Edikan Gabriel Inyang — Software Developer",
     template: "%s — Edikan Gabriel Inyang",
@@ -31,8 +35,6 @@ export const metadata: Metadata = {
   creator: "Edikan Gabriel Inyang",
   publisher: "Edikan Gabriel Inyang",
 
-  metadataBase: new URL("https://example.com"),
-
   robots: {
     index: true,
     follow: true,
@@ -44,7 +46,16 @@ export const metadata: Metadata = {
       "Computer Engineer and Software Developer building thoughtful digital products that solve real-world problems.",
     type: "website",
     locale: "en_US",
+    url: siteUrl,
     siteName: "Edikan Gabriel Inyang",
+    images: [
+      {
+        url: "/profile.jpeg",
+        width: 1200,
+        height: 1200,
+        alt: "Edikan Gabriel Inyang — Software Developer",
+      },
+    ],
   },
 
   twitter: {
@@ -52,6 +63,7 @@ export const metadata: Metadata = {
     title: "Edikan Gabriel Inyang — Software Developer",
     description:
       "Computer Engineer and Software Developer building thoughtful digital products that solve real-world problems.",
+    images: ["/profile.jpeg"],
   },
 };
 
@@ -66,3 +78,4 @@ export default function RootLayout({
     </html>
   );
 }
+
