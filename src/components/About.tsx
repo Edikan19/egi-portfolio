@@ -37,8 +37,7 @@ export default function About() {
             transition={{ duration: 0.7, ease: "easeOut" }}
           >
             <h2 className="max-w-4xl text-3xl font-medium leading-tight tracking-tight text-zinc-100 sm:text-4xl lg:text-5xl">
-              I&apos;m a Computer Engineer who enjoys turning ideas into useful
-              software.
+              I like turning complex ideas into simple, useful experiences.
             </h2>
 
             <div className="mt-10 grid gap-8 border-t border-zinc-900 pt-8 sm:grid-cols-2">
